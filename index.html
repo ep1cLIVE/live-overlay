@@ -21,6 +21,9 @@
             padding: 0;
             overflow: hidden;
         }
+        ::-webkit-scrollbar {
+            display: none;
+        }
 
         /* StreamElements Alerts - Green Area */
         .alerts {
@@ -63,8 +66,8 @@
         /* Follower/Sub Goal - Red Area */
         .goal {
             position: absolute;
-            top: 540px;
-            left: -5px;
+            top: 555px;
+            left: -7px;
             width: 1920px;
             height: 1080px;
             border: none;
@@ -80,7 +83,21 @@
             border: none;
         }
 
-        /* Viewer Attack Browser Overlay - On Top */
+        /* ep1cLIVE Socials - Bottom Right */
+        .socials {
+            position: absolute;
+            left: 540px;
+            top: 770px;
+            width: 633px;
+            height: 355px;
+            transform: scale(0.1);
+            transform-origin: center;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+
+        /* Viewer Attack Browser Overlay - On Top 
         .attack-overlay {
             position: absolute;
             left: 0px;
@@ -101,6 +118,7 @@
             display: block;
             scroll-behavior: none;
         }
+            **/
     </style>
 </head>
 <body>
@@ -119,10 +137,15 @@
         <iframe src="https://streamelements.com/overlay/69640a93b73f9c3ca916e821/CB26uHjJ_LhGM1WZF6oZW4fITkIZysjZ0Tb0cN9xo-V8ZKE-"></iframe>
     </div>
 
-    <!-- Viewer Attack Overlay - On Top (Transparent) -->
+    <!-- Socials -->
+     <div class="socials">
+        <img src="handles.png" alt="ep1cLIVE socials">
+     </div>
+
+    <!-- Viewer Attack Overlay - On Top (Transparent)
     <div class="attack-overlay">
         <iframe id="attackFrame" src="https://www.viewerattack.com/browser-source-e7f34b36-2c8d-4520-b032-321b671b537d" allowfullscreen></iframe>
-    </div>
+    </div>  -->
 
     <script>
         // You can add dynamic functionality here if needed
